@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* In your CSS file (e.g., globals.css or index.css) */
+
+/* For Webkit browsers (Chrome, Safari, Edge, Opera) */
+.hide-scrollbar::-webkit-scrollbar {
+    display: none; /* Hides the scrollbar track and thumb */
+    width: 0;      /* Ensures no width is reserved for it */
+    height: 0;     /* Ensures no height is reserved for it (for horizontal scrollbars) */
+}
+
+/* For Firefox */
+.hide-scrollbar {
+    scrollbar-width: none;  /* "none" hides the scrollbar */
+}
+
+/* For Internet Explorer and older Edge (if compatibility is needed) */
+.hide-scrollbar {
+    -ms-overflow-style: none; /* Hides the scrollbar */
+}

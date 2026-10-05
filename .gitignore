@@ -1,0 +1,81 @@
+# Next.js specific files (frontend)
+frontend/.next/
+frontend/out/
+frontend/node_modules/
+
+# Nest.js specific files (backend)
+backend/dist/ # Nest.js compiled output
+backend/node_modules/
+
+# General project ignored files
+.env
+*.log
+# ... other common ignores as in the Canvas document
+
+# Next.js specific files
+.next/ # Next.js build output
+out/ # Static export output (if using `next export`)
+
+# Dependencies
+node_modules/ # Node.js dependencies
+
+# Production build artifacts
+build/
+dist/
+public/build/ # If you have a separate build output within public
+
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# npm / yarn / pnpm lock files that can be regenerated
+# (Uncomment the one you are not using, or remove if you use just one)
+# npm-debug.log*
+# yarn-debug.log*
+# yarn-error.log*
+# .pnpm-debug.log*
+# .pnpm-store/
+
+# IDE and Editor Specific
+.vscode/ # VS Code settings (if user-specific)
+.idea/ # IntelliJ IDEA
+*.sublime-project
+*.sublime-workspace
+.project
+.settings/
+.DS_Store # macOS specific files
+Thumbs.db # Windows specific files
+
+# Logs and temporary files
+*.log
+npm-debug.log*
+yarn-debug.log*
+test-results/
+coverage/
+
+# Misc
+*.swp
+*.swo
+*.bak
+*.tmp
+*.log
+.eslintcache # ESLint cache file
+.cache/ # General cache directories
+
+# Docker
+.dockerignore # Often accompanies .gitignore, but sometimes you might want to version it.
+Dockerfile.local # If you have local-only Dockerfiles that shouldn't be tracked.
+
+# Uploads
+# If your application allows user uploads, you might want to ignore a specific folder
+# For example, if uploads go into a 'uploads' directory in public/
+# public/uploads/
+
+# Other potential temporary files
+*.tgz
+*.zip
+.next-prerender-manifest.json
+.next-prerender-manifest.js
